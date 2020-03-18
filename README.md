@@ -65,5 +65,5 @@ The provided scripts can be run on the actual data in the same way as they
 are run on the sample input data (which represent subsets of real data
 used in the study).
 If you need more information on how to reproduce results in the manuscript, 
-please, contact me (Olga Vakhrusheva, vakh57@gmail.com). 
+please, contact the author (Olga Vakhrusheva, vakh57@gmail.com). 
 
