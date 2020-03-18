@@ -25,16 +25,25 @@ aligned reads from a single individual. This script reads in a user-specified
 fragment file produced with the extractHAIRS command from HapCUT2.
 
 * the `filter_hapcut2_haplotype_blocks.pl` Perl script uses a list of
-  conflicting variant pairs produced with the
+  "conflicting" variant pairs produced with the
 `get_conflicting_variants_indices.pl` script to filter phased haplotype blocks
 assembled with HapCUT2. It also carries out filtering of haplotype blocks based
 on HapCUT2 switch/mismatch qualities.
 
 
+
+* the `find_haplotypic.counterparts.pl` Perl script takes as input reconstructed
+ sequences of haplotypes of several individuals from the same locus and
+identifies cases where both haplotypes of the same individual have
+reciprocal closest counterparts in other individuals (without 
+examining bootstrap support).
+
 * the `print_nodes_2leaves.py` Python script reads in a user-specified
   phylogenetic tree in the Newick format and searches for nodes with two
 leaves. For each such node, prints out its leaves and the corresponding
-bootstrap support.
+bootstrap support. Can be used in conjunction with the 
+`find_haplotypic.counterparts.pl` script to find groupings of haplotypes
+with decent bootstrap support.
 
 * the `compute_H_scores.pl` Perl script searches an input VCF file for
  triallelic sites carrying all three heterozygous genotypes that harbor 
@@ -44,6 +53,17 @@ subset of sites.
 
 # Comments
 
+This repository contains stand-alone scripts and no installation is needed.
+For all scripts, the expected run time for demo on a "normal" desktop computer
+is less than 60 seconds.
+
 Detailed information on the data requirements and dependencies for each
 script is provided in the `README.md` located in the corresponding
 subdirectory.
+
+The provided scripts can be run on the actual data in the same way as they
+are run on the sample input data (which represent subsets of real data
+used in the study).
+If you need more information on how to reproduce results in the manuscript, 
+please, contact me (Olga Vakhrusheva, vakh57@gmail.com). 
+
