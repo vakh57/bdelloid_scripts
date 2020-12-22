@@ -1,7 +1,7 @@
 # Introduction
 
 This directory contains scripts that were used to process sequencing data for
-*A. vaga* individuals L1-L11 analyzed in the
+*Adineta vaga* individuals L1-L11 analyzed in the
 [article](https://www.nature.com/articles/s41467-020-19614-y) "Genomic signatures of recombination in a natural population of the bdelloid rotifer *Adineta vaga*". Each script is
 in a separate subdirectory containing the script along with sample input and
 output files.
