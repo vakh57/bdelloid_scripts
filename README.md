@@ -2,7 +2,7 @@
 
 This directory contains scripts that were used to process sequencing data for
 *A. vaga* individuals L1-L11 analyzed in the
-[manuscript](https://www.biorxiv.org/content/10.1101/489393v1). Each script is
+[article](https://www.nature.com/articles/s41467-020-19614-y). Each script is
 in a separate subdirectory containing the script along with sample input and
 output files.
 
